@@ -15,13 +15,16 @@ checking out files, commits and branches.
 git checkout master
 git branch -r
 git branch
+git checkout -b branch_name
 
 git log
 git log --oneline
-This will display the id of your commits in the branch in which you are.
+This will display the id of your commits of the branch in which you are.
 
 git checkout id_of_commit
 git checkout id_of_commit file_name
+git checkout HEAD file_name
+
 
 
 
