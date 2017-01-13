@@ -25,6 +25,12 @@ git checkout id_of_commit
 git checkout id_of_commit file_name
 git checkout HEAD file_name
 
+***Git hides the states of the files which are in other branches and always points to the current HEAD files.**
+
+And if we have done any changes in the master branch we have to commit that before going to other branch to see the previous version of the file. 
+
+
+
 
 
 
