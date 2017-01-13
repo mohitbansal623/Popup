@@ -1,0 +1,27 @@
+git init repository_name
+git add File_name
+git commit -m "MEssage"
+git remote add origin https://github.com/mohitbansal623/repositorry_name
+git push origin master
+
+git clone https://github.com/libgit2/libgit2
+git clone https://github.com/libgit2/libgit2 mylibgit  //////////New name
+git rm name_of_file
+git mv README.md to README
+
+git checkout
+checking out files, commits and branches.
+
+git checkout master
+git branch -r
+git branch
+
+git log
+git log --oneline
+This will display the id of your commits in the branch in which you are.
+
+git checkout id_of_commit
+git status
+
+
+
