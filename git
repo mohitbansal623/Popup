@@ -29,14 +29,6 @@ git checkout HEAD file_name
 
 And if we have done any changes in the master branch we have to commit that before going to other branch to see the previous version of the file. 
 
-ewfbwekfbkwbfbkbkbk
-
-
-qwefefge
-fwefwefwef
-wfwefwef
-wefwefw
-wffw
 
 --soft – The staged snapshot and working directory are not altered in any way.
 
@@ -60,3 +52,9 @@ They don't delete the commits but changes takes place.
 We can also make the previous commit as HEAD without altering the new commits
 git checkout HEAD~1
 This makes the HEAD point to the commit next to head.
+
+This is useful for quickly inspecting an old version of yourproject.
+
+
+However, since there is no branch reference to the current HEAD, this puts you in a detached HEAD state. This can be dangerous if you start adding new commits because there will be no way to get back to them after you switch to another branch. For this reason, you should always create a new branch before adding commits to a detached HEAD.
+
