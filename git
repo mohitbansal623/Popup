@@ -50,7 +50,6 @@ git reset --hard HEAD
 They don't delete the commits but changes takes place.
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 We can also make the previous commit as HEAD without altering the new commits
 git checkout HEAD~1
 This makes the HEAD point to the commit next to head.
