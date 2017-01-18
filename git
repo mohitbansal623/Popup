@@ -48,3 +48,13 @@ wffw
 
 
 
+git reset --soft HEAD~1
+git reset --mixed HEAD~1
+git reset --hard HEAD~1
+*******************************************
+git reset --mixed HEAD
+git reset --hard HEAD
+
+They don't delete the commits but changes takes place.
+
+
