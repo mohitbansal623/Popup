@@ -43,13 +43,12 @@ And if we have done any changes in the master branch we have to commit that befo
 git reset --soft HEAD~1
 git reset --mixed HEAD~1
 git reset --hard HEAD~1
-*******************************************
+*****************************************************************************************
 git reset --mixed HEAD
 git reset --hard HEAD
 
 They don't delete the commits but changes takes place.
 
-<<<<<<< HEAD
 We can also make the previous commit as HEAD without altering the new commits
 git checkout HEAD~1
 This makes the HEAD point to the commit next to head.
