@@ -77,4 +77,4 @@ git rebase -i master
 #  x, exec = run command (the rest of the line) using shell
 
 
-Rebase my commits
+
