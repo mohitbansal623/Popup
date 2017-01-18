@@ -66,12 +66,15 @@ This is useful for quickly inspecting an old version of yourproject.
 
 However, since there is no branch reference to the current HEAD, this puts you in a detached HEAD state. This can be dangerous if you start adding new commits because there will be no way to get back to them after you switch to another branch. For this reason, you should always create a new branch before adding commits to a detached HEAD.
 
-swdednverknve
-erg
-erwg
-ewrg
-wergwe
-rgwergw
-erg
-weg
-ewrgwe
+
+git rebase -i master
+ Commands:
+#  p, pick = use commit
+#  r, reword = use commit, but edit the commit message
+#  e, edit = use commit, but stop for amending
+#  s, squash = use commit, but meld into previous commit
+#  f, fixup = like "squash", but discard this commit's log message
+#  x, exec = run command (the rest of the line) using shell
+
+
+Rebase my commits
