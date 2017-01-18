@@ -26,12 +26,43 @@ git checkout id_of_commit file_name
 git checkout HEAD file_name
 
 ***Git hides the states of the files which are in other branches and always points to the current HEAD files.**
+<<<<<<< HEAD
 
 And if we have done any changes in the master branch we have to commit that before going to other branch to see the previous version of the file. 
 
 
 
+=======
+>>>>>>> master1
+
+And if we have done any changes in the master branch we have to commit that before going to other branch to see the previous version of the file. 
+
+
+--soft – The staged snapshot and working directory are not altered in any way.
+
+
+--mixed – The staged snapshot is updated to match the specified commit, but the working directory is not affected. This is the default option.
+
+
+--hard – The staged snapshot and the working directory are both updated to match the specified commit.
 
 
 
+git reset --soft HEAD~1
+git reset --mixed HEAD~1
+git reset --hard HEAD~1
+*****************************************************************************************
+git reset --mixed HEAD
+git reset --hard HEAD
+
+They don't delete the commits but changes takes place.
+
+We can also make the previous commit as HEAD without altering the new commits
+git checkout HEAD~1
+This makes the HEAD point to the commit next to head.
+
+This is useful for quickly inspecting an old version of yourproject.
+
+
+However, since there is no branch reference to the current HEAD, this puts you in a detached HEAD state. This can be dangerous if you start adding new commits because there will be no way to get back to them after you switch to another branch. For this reason, you should always create a new branch before adding commits to a detached HEAD.
 
