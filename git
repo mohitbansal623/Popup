@@ -58,10 +58,3 @@ This is useful for quickly inspecting an old version of yourproject.
 
 However, since there is no branch reference to the current HEAD, this puts you in a detached HEAD state. This can be dangerous if you start adding new commits because there will be no way to get back to them after you switch to another branch. For this reason, you should always create a new branch before adding commits to a detached HEAD.
 
-
-git revert HEAD~2
-This command will take 2nd commit, revert it and then create a new commit.
-
-Contrast this with git reset, which does alter the existing commit history. For this reason, git revert should be used to undo changes on a public branch, and git reset should be reserved for undoing changes on a private branch.
-
-You can also think of git revert as a tool for undoing committed changes, while git reset HEAD is for undoing uncommitted changes.
